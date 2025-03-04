@@ -3,27 +3,24 @@
 <head>  
   <meta charset="UTF-8">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <title>视频截图工具</title>  
+  <title>视频关键页面截图工具</title>  
   <link rel="stylesheet" href="style.css">  
 </head>  
 <body>  
   <div class="container">  
-    <h1>视频截图工具</h1>  
+    <h1>视频关键页面截图工具</h1>  
     <input type="file" id="videoUpload" accept="video/*">  
     <video id="videoPlayer" controls></video>  
-    
-    <!-- 设置截图频率 -->  
+
     <div class="settings">  
       <label for="frequency">截图频率（秒/帧）：</label>  
       <input type="number" id="frequency" min="1" value="1">  
     </div>  
-    
+
     <button id="startCapture" disabled>开始批量截图</button>  
     <div id="screenshots"></div>  
-    <button id="downloadAll" disabled>批量下载截图</button>  
+    <button id="saveSelected" disabled>保存选中截图</button>  
   </div>  
   <script src="script.js"></script>  
 </body>  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 </html>
